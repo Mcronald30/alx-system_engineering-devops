@@ -1,2 +1,2 @@
 14-findthatword
-egrep "root" /etc/passwd
+grep "root" /etc/passwd
