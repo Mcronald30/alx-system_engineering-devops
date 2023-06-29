@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+#Write a Bash script that displays:
+#The content of the current directory
+#In a list format. Where only the part
+#of the name after the first dash is displayed
+
+hr=0
+min=1
+
+while [ $hr -lt 12 ] || [ $min -lt 60 ]
+do
+    printf "%02d:%02d\n" $hr $min
+
+    if [ $min -lt 59 ]
+    then
+        ((min++))
+    else
+        ((hr++))
+        min=0
+    fi
+
+    if [ $hr -eq 13 ]
+    then
+        hr=1
+    fi
+done | head -n 70
