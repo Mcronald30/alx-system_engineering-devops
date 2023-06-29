@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Bash script that reads and displays the content of the file
+#/etc/passwd in a formatted manner, using the while loop and IFS
+
+while IFS=':' read -r username _ uid gid _ home shell
+do
+    read -r _ _ _ _ gecos <<< $(getent passwd "$username")
+
+    echo "The user $username is part of the $gid gang, lives in $home and rides $shell."
+    echo "User ID's place is protected by the passcode $gecos, more info about the user here: $uid INFO"
+    echo
+done < "/etc/passwd"
