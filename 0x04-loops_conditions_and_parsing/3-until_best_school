@@ -3,7 +3,7 @@
 
 bs=1
 
-while [ $bs -ge 10 ]
+until [ $bs -ge 10 ]
 do
 	echo "Best School"
 	((bs++))
