@@ -6,4 +6,8 @@ Host *
     GSSAPIDelegateCredentials no
     IdentityFile ~/.ssh/school
     PubkeyAuthentication yes
+<<<<<<< HEAD
     passwordAuthentication no
+=======
+    PasswordAuthentication no
+>>>>>>> b21a37b9664e1adbb406cdf465b042453764505d
