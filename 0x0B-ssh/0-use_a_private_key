@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # a script to onnect ssh to server using prv_key
-ssh -i ~/.ssh/school ubuntu@100.25.222.145
+
+ssh ubuntu -i ~/.ssh/school
