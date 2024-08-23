@@ -1,5 +1,5 @@
 0x19-postmortem task using webstack debugging #1
-
+[!Technical Issues Resolution] (./postmorterm_tech_issue.webp)
 Issue Summary
 Duration of the Outage: The outage started at 11:45 AM and was resolved by 12:45 PM West African Time.
 
@@ -45,3 +45,4 @@ Ensure Nginx is properly configured and listening on port 80
 cat /etc/nginx/sites-available/default > /etc/nginx/sites-enabled/default sudo service nginx restart
 
 This script ensures that the correct configuration is enabled and restarts Nginx to apply the changes.
+[!Nginx Server Configuration Issue Resolution Flowchart] (./postmorterm_flow_chart.webp.png)
