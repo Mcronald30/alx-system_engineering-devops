@@ -1,5 +1,6 @@
 0x19-postmortem task using webstack debugging #1
 [!Technical Issues Resolution] (./postmorterm_tech_issue.webp)
+
 Issue Summary
 Duration of the Outage: The outage started at 11:45 AM and was resolved by 12:45 PM West African Time.
 
